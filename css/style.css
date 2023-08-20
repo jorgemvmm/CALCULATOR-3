@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: blanchedalmond;
+}
+.calculator:hover {
+  box-shadow: #979797;
+}
+.calculator {
+  background-color: #343131;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000000;
+  box-shadow: #979797;
+}
+
+.screen {
+  font-size: 2rem;
+  background-color:#a7af7c;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  border-color: #000000;
+}
+
+button {
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  cursor: pointer;
+  color:white;
+}
+
+/* Cambio de color al pasar el cursor sobre los botones */
+.number-buttons button:hover {
+  background-color: #979797;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+.operation-buttons button:hover {  
+  background-color: rgb(63, 204, 204);
+  box-shadow:25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+#calculate:hover {
+  background-color: #81c277;
+  box-shadow:25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+#backspace:hover {
+  background-color: rgb(237 234 110);
+  box-shadow:25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+#clear:hover {
+  background-color: #b74c4c;
+  box-shadow:25px 25px 75px rgba(0, 0, 0, 0.25),
+  10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+  
+}
+
+.number-buttons {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  
+}
+.number-buttons button {
+  background-color: #6b6b6b;
+  width: 45px;
+  height: 45px;
+}
+
+.operation-buttons {
+    grid-column: span 1;
+    display: flex;
+  	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.operation-buttons button {
+  background-color: #008f8f;
+  width: 45px;
+  height: 45px;
+}
+
+#clear {
+  background-color: rgb(146, 60, 60);
+  grid-column: span 2;
+  font-size: 1rem;
+}
+
+#backspace {
+  background-color: rgb(182, 180, 84);
+  grid-column: span 2;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+#calculate{
+  background-color: rgb(81, 136, 66);
+  color: #000000;
+  font-size: 1rem;
+  color:white;
+}
